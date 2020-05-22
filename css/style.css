@@ -1,0 +1,923 @@
+/*Global Section*/
+
+body{
+    
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Yeseva One', cursive;
+
+}
+
+p{
+    margin-bottom: 0;
+}
+
+/*Header CSS*/
+
+
+header{
+    background:url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header .navbar{
+    background: url(../images/nav-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header .navbar .nav-item .nav-link{
+    color: #fff;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+header .navbar .nav-item .nav-link::after{
+
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: 0.4s linear;
+
+}
+
+header .navbar .nav-item .nav-link::before{
+
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    transition: 0.4s linear;
+
+}
+
+.navbar .nav-item.active .nav-link{
+        color: #fff;
+
+}
+
+.navbar .nav-item.active .nav-link::after{
+    content: "";
+    position: absolute;
+    width:50%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: 0.4s linear;
+}
+
+.navbar .nav-item.active .nav-link::before{
+    content: "";
+    position: absolute;
+    width:50%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item .nav-link:hover{
+    color: #fff;
+}
+
+
+.navbar .nav-item .nav-link:hover::after{
+    width: 50%
+}
+
+.navbar .nav-item .nav-link:hover::before{
+    width: 50%
+
+}
+
+
+header .hero-area{
+    padding: 7% 0;
+    /* margin: 100px 0; */
+}
+
+header .hero-area h2{
+    font-family: 'Yeseva One', cursive;
+    color: #fff;
+    font-size: 77px;
+    margin: 0 2%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+
+header .hero-area .bg-deco{
+    text-align: center;
+    }
+
+header .hero-area .btn-cta{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+header .hero-area .btn-cta .btn-cta{
+    border: 1px solid #0000006b;
+    border-radius: 2px;
+    margin: 0 15px;
+    background: #0000006b;
+    padding: 10px 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+header .hero-area .btn-cta .btn-menu{
+    border: 1px solid #ffffff57;
+    border-radius: 2px;
+    margin: 0 15px;
+    background: #ffffff2e;
+    padding: 10px 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+
+header .hero-area .btn-cta .btn-menu:hover{
+    border: 1px solid #0000003d;
+    background: #0000006b;
+    transition: 0.4s linear;
+}
+
+
+/*About CSS*/
+
+.about{
+    background: url(../images/section-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.about .cook{
+    text-align: center;
+}
+
+.about .cook h4{
+    font-family: 'Yeseva One', cursive;
+    color: #cc9900;
+    font-size: 36px;
+    padding-bottom: 1%;
+}
+
+.about .cook img{
+    padding-bottom: 5%;
+}
+
+.about .cook .cook-img{
+    padding-left: 10%;
+}
+
+.about .cook .cook-img img{}
+
+
+.about .cook p{
+    line-height: 1.7;
+    padding: 0 10%;
+    margin-bottom: 10%;
+}
+
+.about .dish{
+    text-align: center;
+    overflow: hidden;
+}
+
+.about .dish img{
+    transition: all 0.4s;
+}
+
+.about .dish:hover img{
+    transform: scale(1.2);
+}
+
+
+/*Ingredients CSS*/
+
+.ingredients{
+    background: url(../images/section-bg1.png);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    height: 100vh;
+}
+
+.ingredients .hero-area{
+    color: #fff;
+    width: 40%;
+    text-align: center;
+    background: url(../images/masalla-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 3%;
+    margin-left: 50%;
+    overflow: hidden;
+}
+
+.ingredients .hero-area h4{
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    margin-bottom: 2%;
+}
+
+.ingredients .hero-area img{
+    margin-bottom: 3%;
+}
+
+
+.ingredients .hero-area p{
+    line-height: 1.7;
+    padding: 0 10%;
+    margin-bottom: 10%;
+}
+
+.ingredients .hero-area .masalla-img{}
+
+
+/*Menu CSS*/
+
+.menu{
+    background: url(../images/section-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+
+.menu .menu-item{
+
+margin-bottom: 50px;
+
+padding: 0 50px;
+}
+
+.menu .menu-item .item-section{
+    text-align: center;
+    color: #cc9900;
+    font-size: 36;
+    /* font-size: 22px; */
+    margin-bottom: 30px;
+}
+
+
+.menu .menu-item h4{
+    font-size: 36px;
+}
+
+.menu .menu-item img{}
+
+.menu .menu-item .item-price{
+    margin-bottom: 30px;
+}
+
+.menu .menu-item .item-price h5{
+    color: #cc9900;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.menu .menu-item .item-price span{
+    float: right;
+}
+
+.menu .menu-item .item-price p{}
+
+.menu .menu-item .item-price h6{
+    margin-bottom: 0;
+    background: #cc9900;
+    color: #fff;
+    text-align: center;
+    margin-left: 80%;
+    padding: 3px;
+}
+
+.menu .menu-item .item-price .special-item{
+    border: 1px solid #cc9900;
+    padding: 10px;
+}
+
+.menu .menu-item .item-price .special-item h5{}
+
+.menu .menu-item .item-price .special-item span{}
+
+.menu .menu-item .item-price .special-item p{}
+
+
+
+
+
+
+/*Review CSS*/
+
+.review{
+    background: url(../images/section-bg4.png);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    height: 100vh;
+}
+
+.review .hero-area{
+    text-align: center;
+    color: #fff;
+    background: url(../images/guest-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    padding: 10% 0;
+    margin-left: 20%;
+}
+
+.review .hero-area h4{
+    font-size: 36px;
+}
+
+.review .hero-area img{
+    margin-bottom: 20px;
+}
+
+.review .hero-area p{}
+
+
+.review .hero-area blockquote{}
+
+.review .hero-area blockquote p{
+    padding: 0 20%;
+    line-height: 1.7;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+/*Reservation CSS*/
+
+.reservation{
+    background: url(../images/section-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.reservation .images{}
+
+.reservation .images .images-1{
+    text-align: center;
+
+}
+
+.reservation .images .images-2{
+    text-align: center;
+}
+
+
+
+.reservation .content{
+    padding: 0 8%;
+}
+
+.reservation .content .hero-area{
+    text-align: center;
+}
+
+.reservation .content .hero-area h4{
+    color: #cc9900;
+    font-size: 36px;
+}
+
+.reservation .content .hero-area img{
+    margin-bottom: 20px;
+
+}
+
+
+.reservation .content .hero-area p{
+    margin-bottom: 20px;
+}
+
+.reservation .content form{
+}
+
+.reservation .content form label h6{
+    color: #cc9900;
+    margin-bottom: 0;
+}
+
+.reservation .content form .form-control{
+    margin-bottom: 20px;
+}
+
+.reservation .content form .btn-cta{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reservation .content form .btn-cta a{
+    text-decoration: none;
+    border: 1px solid #cc9900;
+    background: #cc9900;
+    color: #fff;
+    padding: 7px 40px;
+    border-radius: 3px;
+}
+
+.reservation .content form .btn-cta a:hover{
+    background: #b58a0a;
+    transition: 0.4s linear;
+}
+
+
+/*Footer CSS*/
+
+footer{
+    background: #000000;
+    padding: 60px 0;
+}
+
+footer .content{
+    text-align: center;
+    color: #fff;
+}
+
+footer .content h5{
+    margin-bottom: 5%;
+}
+
+footer .content img{
+    margin-bottom: 20px;
+}
+
+footer .content p{
+    line-height: 1.7;
+    padding: 0 5%;
+    margin-bottom: 0%;
+}
+
+footer .content ul{
+    margin-top: 10%;
+}
+
+footer .content ul li{
+}
+
+footer .content ul li a{
+    color: #fff;
+}
+
+footer .content ul li a i{}
+
+footer .author{
+    text-align: center;
+    margin-top: 5%;
+    color: #868686;
+}
+
+footer .author h6{}
+
+
+
+
+
+
+
+/*Responsisive CSS*/
+
+
+@media (min-width: 0px ) and (max-width: 575px ){
+
+    /*Nav-bar Responsive*/
+
+.navbar .nav-item.active .nav-link::after {
+    content: unset;
+   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+   
+}
+
+header .navbar .nav-item .nav-link {
+
+     margin-left: 0; 
+   
+}
+
+header .navbar .nav-item .nav-link::after {
+    content:unset;
+    }
+
+header .navbar .nav-item .nav-link::before {
+    content:unset;
+    }
+
+
+    /*Header Responsive*/
+
+    header .hero-area {
+    padding: 20% 0;
+}
+
+header .hero-area h2 {
+    font-size: 28px;
+    padding: 0; 
+}
+
+header .hero-area .btn-cta a {
+    padding: 5px 20px;
+}
+
+/*Ingredients Responsive*/
+
+.ingredients {
+    padding: 80px 0;
+    padding-bottom: 0;
+}
+
+.ingredients .hero-area {
+     width: 100%; 
+    margin-left:0; 
+}
+
+.ingredients .hero-area h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+.menu {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.menu .menu-item h4 {
+    font-size: 32px;
+}
+
+.menu .menu-item {
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.menu .menu-item .item-price h6 {
+    margin-left: 75%;
+}
+
+
+
+/*Review Responsive*/
+
+.review {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 65px 0;
+}
+
+.review .hero-area {
+     width: 100%; 
+    padding: 15% 0;
+    margin-left: 0; 
+}
+
+.review .hero-area h4 {
+    font-size: 24px;
+}
+
+.review .hero-area blockquote p {
+    padding: 0 10%;
+
+}
+
+
+/*Reservation CSS*/
+
+
+.reservation .images .images-1 {
+    padding-bottom: 10%;
+}
+
+.reservation .images .images-2 {
+    padding-bottom: 10%;
+}
+
+.reservation .content .hero-area h4 {
+    
+    font-size: 25px;
+}
+
+footer {
+    
+    padding-bottom: 25%;
+}
+
+footer .content h5 {
+    margin-top: 10%;
+}
+
+
+}
+
+@media (min-width: 576px ) and (max-width: 767px ){
+
+    /*Nav-bar Responsive*/
+
+.navbar .nav-item.active .nav-link::after {
+    content: unset;
+   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+   
+}
+
+header .navbar .nav-item .nav-link::after {
+    content:unset;
+    }
+
+header .navbar .nav-item .nav-link::before {
+    content:unset;
+    }
+
+
+    /*Header Responsive*/
+
+header .hero-area h2 {
+    font-size: 50px;
+    padding: 0;
+}
+
+header .hero-area .btn-cta a {
+    padding: 5px 20px;
+}
+
+/*Ingredients Responsive*/
+
+.ingredients {
+    padding: 67px 0;
+    padding-bottom: 0;
+}
+
+.ingredients .hero-area {
+     width: 100%; 
+    margin-left:0; 
+}
+
+.ingredients .hero-area h4 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/*Review Responsive*/
+
+.review {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 65px 0;
+}
+
+.review .hero-area {
+     width: 100%; 
+    padding: 15% 0;
+    margin-left: 0; 
+}
+
+.review .hero-area h4 {
+    font-size: 24px;
+}
+
+.review .hero-area blockquote p {
+    padding: 0 10%;
+
+}
+
+/*Reservation CSS*/
+
+
+.reservation .images .images-1 {
+    padding-bottom: 10%;
+}
+
+.reservation .images .images-2 {
+    padding-bottom: 10%;
+}
+
+footer {
+    
+    padding-bottom: 25%;
+}
+
+footer .content h5 {
+    margin-top: 10%;
+}
+
+
+
+
+}
+
+@media (min-width: 768px ) and (max-width: 991px ){
+
+    /*Nav-bar Responsive*/
+
+.navbar .nav-item.active .nav-link::after {
+    content: unset;
+   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+   
+}
+
+header .navbar .nav-item .nav-link::after {
+    content:unset;
+    }
+
+header .navbar .nav-item .nav-link::before {
+    content:unset;
+    }
+
+
+
+    /*Header Responsive*/
+
+    header .hero-area {
+    padding: 15% 0;
+}
+
+header .hero-area h2 {
+    font-size: 50px;
+    padding: 0;
+}
+
+header .hero-area .btn-cta a {
+    padding: 5px 20px;
+}
+
+/*Ingredients Responsive*/
+
+.ingredients {
+    padding: 45px 0;
+    padding-bottom: 0;
+}
+
+.ingredients .hero-area {
+     width: 50%;
+     margin-left: 50%;
+}
+
+.ingredients .hero-area h4 {
+    font-size: 36px;
+}
+
+
+.menu {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.menu .menu-item h4 {
+    font-size: 32px;
+}
+
+.menu .menu-item {
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.menu .menu-item .item-price h6 {
+    margin-left: 75%;
+}
+
+
+
+
+/*Review Responsive*/
+
+.review {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 80px 0;
+}
+
+.review .hero-area {
+     width: 80%;
+     padding: 10% 0;
+     margin-left: 10%;
+}
+
+.review .hero-area h4 {
+    font-size: 30px;
+}
+
+.review .hero-area blockquote p {
+    padding: 0 9%;
+}
+
+.reservation .images {
+    margin-bottom: 5%;
+}
+
+footer .content ul li a {
+    padding: 0 10px;
+}
+
+
+}
+
+@media (min-width: 992px ) and (max-width: 1199px ){
+
+    /*Header Responsive*/
+
+    header .hero-area h2 {
+    font-size: 60px;
+}
+
+/*Ingredients Responsive*/
+
+.ingredients {
+    padding: 45px 0;
+    padding-bottom: 0;
+}
+
+.ingredients .hero-area {
+     width: 50%;
+     margin-left: 50%;
+}
+
+.ingredients .hero-area h4 {
+    font-size: 36px;
+}
+
+.review {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 80px 0;
+}
+
+.review .hero-area {
+     width: 60%;
+     padding: 7% 0;
+     margin-left: 20%;
+}
+
+.review .hero-area h4 {
+    font-size: 36px;
+}
+
+.review .hero-area blockquote p {
+    padding: 0 10%;
+}
+
+.reservation .content .hero-area h4 {
+    
+    font-size: 30px;
+}
+
+.reservation .content .hero-area img {
+    margin-bottom: 10px;
+}
+
+.reservation .content .hero-area p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.reservation .content form .form-control {
+    margin-bottom: 10px;
+}
+
+}
+
